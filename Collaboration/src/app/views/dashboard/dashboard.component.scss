@@ -1,0 +1,54 @@
+:host {
+  .legend {
+    small {
+      font-size: x-small;
+    }
+  }
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-title {
+  font-size: 36px;
+}
+
+.header-description {
+  font-size: 18px;
+}
+
+.section-content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 28px;
+}
+
+.section-description {
+  font-size: 16px;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefit-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

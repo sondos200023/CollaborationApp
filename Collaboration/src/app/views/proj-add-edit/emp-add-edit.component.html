@@ -1,0 +1,58 @@
+<div mat-dialog-title>
+    <h1>Formulaire</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+   <div mat-dialog-content class="content">
+       <div class="row">
+        <div style="display: flex;">
+        <mat-form-field appearance="outline">
+            <mat-label>nom</mat-label>
+            <input matInput type="text" placeholder="Nom" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Prénom</mat-label>
+            <input matInput type="text" matInput placeholder="Prénom" formControlName="lastName">
+        </mat-form-field>
+    </div>
+</div>
+    <div class="row">
+        <div style="display: flex;">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder=" email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput type="Passeword" placeholder="Mot de passe" formControlName="Password">
+        </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div style="display: flex;">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Adresse</mat-label>
+            <input matInput type="text" placeholder=" Adresse" formControlName="Adresse">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Numéro de téléphone</mat-label>
+            <input matInput type="text" placeholder="Numéro de téléphone" formControlName="Phone">
+        </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div style="display: flex;">
+        <mat-radio-group aria-label="Select an option" formControlName="Grade">
+            <mat-label><b>Grade:</b></mat-label>
+            <mat-radio-button value="Chef">Chef d'équipe</mat-radio-button>
+            <mat-radio-button value="Employé">Employé</mat-radio-button>
+            <mat-radio-button value="autre">Autre</mat-radio-button>
+        </mat-radio-group>
+        </div>
+    </div>
+  
+    <div mat-dialog-actions class="action">
+  <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+</div>

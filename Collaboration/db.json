@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employe": [
+    {
+      "firstName": "thouir",
+      "lastName": "sondos",
+      "email": "sondos@gmail.com",
+      "Password": "123456",
+      "Adresse": "gabes",
+      "Phone": "126345678",
+      "Grade": "autre",
+      "id": 10
+    },
+    {
+      "firstName": "ali",
+      "lastName": "ali",
+      "email": "ali@gmail.com",
+      "Password": "12345",
+      "Adresse": "gabes",
+      "Phone": "12345678",
+      "Grade": "Employé",
+      "id": 11
+    }
+  ],
+  "Projet1": [
+    {
+      "Titre": "Projet Spring",
+      "DateDePublication": "2023-12-13T23:00:00.000Z",
+      "DateDeModification": "2023-11-06T23:00:00.000Z",
+      "ChefDEquipe": "Sondos",
+      "id": 1
+    },
+    {
+      "Titre": "Projet jave",
+      "DateDePublication": "2023-11-02T23:00:00.000Z",
+      "DateDeModification": "2023-11-06T23:00:00.000Z",
+      "ChefDEquipe": "Sondos",
+      "id": 2
+    }
+  ]
+}

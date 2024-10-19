@@ -1,0 +1,54 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1348px;
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.action {
+  display: flex;
+  gap: 5px;
+}
+
+/* styles.css (ou votre fichier de styles personnalisés) */
+
+/* Style pour le bouton */
+.custom-button {
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Effets de transition */
+}
+
+/* Style pour le bouton au survol */
+.custom-button:hover {
+  background-color: #158fb1; /* Nouvelle couleur de fond au survol */
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+/* Style pour le bouton lorsque désactivé */
+.custom-button[disabled] {
+  background-color: #ccc; /* Couleur de fond grise */
+  color: #666; /* Couleur du texte grise */
+  cursor: not-allowed; /* Curseur indisponible */
+}
+
+/* Style pour le texte du bouton */
+.custom-button .button-text {
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Gras */
+}
+
+/* Appliquer une marge à gauche pour espacer le bouton de la droite de la barre d'outils */
+.custom-button {
+  margin-left: 10px;
+}
